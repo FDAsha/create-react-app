@@ -1,0 +1,8 @@
+.ItemTwo {
+    width           : 70%;
+    background-color: rgb(42, 56, 255);
+}
+
+.ItemTwo p {
+    padding: 70px 0 0 100px;
+}

@@ -1,0 +1,9 @@
+aside {
+  width           : 200px;
+  background-color: rgb(255, 242, 53);
+  margin-right    : 30px;
+}
+
+aside p {
+  padding: 20px 0px 0 20px;
+}

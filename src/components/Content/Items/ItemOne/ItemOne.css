@@ -1,0 +1,9 @@
+.ItemOne {
+    width           : 30%;
+    margin-right    : 30px;
+    background-color: rgb(56, 212, 17);
+}
+
+.ItemOne p {
+    padding: 80px 0 0 60px;
+}

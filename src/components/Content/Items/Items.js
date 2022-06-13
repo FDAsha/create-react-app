@@ -15,13 +15,13 @@ const ItemWrapper = styled.div`
 
 const items = [{
   id: 'one',
-  width: '50%',
+  width: '20%',
   height: '290px',
   backgroundColor: 'green',
   text: 'Контент 1'
 }, {
   id: 'two',
-  width: '50%',
+  width: '80%',
   height: '290px',
   backgroundColor: 'blue',
   text: 'Контент 2'

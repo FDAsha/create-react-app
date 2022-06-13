@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Aside from "./Aside/Aside";
 import Items from "./Items/Items";
 
-const ContentS = styled.section`
+const Section = styled.section`
     padding: 20px 0 35px 0;
 `
 
@@ -13,14 +13,14 @@ const ContentWrapper = styled.div`
 
 `
 
-function Content() {
+const Content = () => {
     return (
-        <ContentS>
+        <Section>
             <ContentWrapper>
                 <Aside />
                 <Items />
             </ContentWrapper>
-        </ContentS>
+        </Section>
 
     )
 }

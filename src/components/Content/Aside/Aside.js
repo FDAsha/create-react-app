@@ -1,21 +1,12 @@
-import styled from "styled-components";
+import React from "react";
+import Box from '@mui/material/Box';
 
-const AsideWrapper = styled.aside`
-  width           : 200px;
-  background-color: rgb(255, 242, 53);
-  margin-right: 20px;
-`
-
-const AsideText = styled.p`
-  padding: 20px 0px 0 20px;
-`
-
-const Aside = () => {
-  return (
-    <AsideWrapper>
-      <AsideText>сайдбар</AsideText>
-    </AsideWrapper>
-  )
+export default function Aside() {
+    return (
+        <Box sx={{ bgcolor: 'yellow', color: '#000', width: 300, height: 480, mr: 3}}>
+           <p style={{
+               padding: 40
+           }}>сайдбар</p>
+        </Box>
+    );
 }
-
-export default Aside;

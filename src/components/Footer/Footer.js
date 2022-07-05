@@ -1,25 +1,14 @@
 import React from "react";
-import styled from "styled-components";
+import Box from '@mui/material/Box';
 
-const Section = styled.section`
-padding         : 20px 0px 0px 100px;
-background-color: rgb(119, 63, 116);
-max-width: 100%;
-height   : 80px;
-`
-
-const SectionText = styled.p`
-padding: 10px 0 0 30px;
-`
-
-const Footer = () => {
+export default function Footer() {
     return (
-        <Section>
-            <SectionText>
-                Футер
-            </SectionText>
-        </Section>
-    )
+        <Box sx={{ bgcolor: 'purple', color: '#000', height: 100 }}>
+            <p style={{
+                padding: 50,
+            }}>
+                футер
+            </p>
+        </Box>
+    );
 }
-
-export default Footer;

@@ -1,28 +1,19 @@
 import styled from "styled-components";
-import Aside from "./Aside/Aside";
-import Items from "./Items/Items";
+import Aside from "./Aside/Aside.js";
+import Boxs from "./Boxs/Boxs";
 
-const Section = styled.section`
-    padding: 20px 0 35px 0;
-`
-
-const ContentWrapper = styled.div`
-    width: 100%;
-    height               : 600px;
-    display: flex;
-
+const Wrapper = styled.div`
+display: flex;
+padding: 40px 0;
 `
 
 const Content = () => {
     return (
-        <Section>
-            <ContentWrapper>
-                <Aside />
-                <Items />
-            </ContentWrapper>
-        </Section>
-
+        <Wrapper>
+            <Aside></Aside>
+            <Boxs></Boxs>
+        </Wrapper>
     )
-}
+};
 
 export default Content;

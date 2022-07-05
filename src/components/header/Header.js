@@ -1,31 +1,14 @@
 import React from "react";
-import styled from "styled-components";
+import Box from '@mui/material/Box';
 
-const Section = styled.section`
-widht: 100px 
-`
-
-const Nav = styled.nav`
-max-width       : 100%;
-height          : 80px;
-background-color: brown;
-`
-
-const Text = styled.p`
-padding: 20px 0 0 40px;
-
-`
-
-const Header = () => {
+export default function Header() {
     return (
-        <Section>
-            <Nav>
-                <Text>
-                    Навигация
-                </Text>
-            </Nav>
-        </Section>
-    )
+        <Box sx={{ bgcolor: 'red', color: '#000', height: 100 }}>
+            <p style={{
+                padding: 20,
+            }}>
+                блок навигации
+            </p>
+        </Box>
+    );
 }
-
-export default Header;

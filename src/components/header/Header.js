@@ -18,6 +18,7 @@ padding: 20px 0 0 40px;
 
 const Header = () => {
     return (
+
         <Section>
             <Nav>
                 <Text>
@@ -25,6 +26,7 @@ const Header = () => {
                 </Text>
             </Nav>
         </Section>
+
     )
 }
 

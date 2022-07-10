@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Item from './Item/item'
+import Item from './Item/Item'
 
 const ItemWrapper = styled.div`
     width: 100%;

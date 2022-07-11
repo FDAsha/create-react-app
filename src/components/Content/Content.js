@@ -1,6 +1,3 @@
-// import Aside from "./Aside/Aside";
-// import Items from "./Items/Items";
-
 import Items from "./Items/Items";
 
 const styles = {
@@ -15,41 +12,40 @@ const styles = {
 }
 
 const Content = (props) => {
-    const itemss = [{
+    const renderItems = [{
         id: 'one',
         width: '20%',
         height: '290px',
         backgroundColor: 'green',
-        text: 'Контент 1',
+        // text: ['Контент 1'],
         padding: '80px 0 0 60px'
     }, {
         id: 'two',
         width: '80%',
         height: '290px',
         backgroundColor: 'blue',
-        text: 'Контент 2',
+        text: ['Контент 2'],
         padding: '70px 0 0 100px'
     }, {
         id: 'three',
         width: '100%',
         backgroundColor: 'pink',
-        text: 'Контент 3',
-    }]
+        text: ['Контент 3'],
+        color: 'white',
+    }, {
+      id: 'fourth',
+      width: '50%',
+      backgroundColor: 'black',
+      text: ['Контент 4'],
+      color: 'white'
+  }]
 
-      // widht = { widht },
-  //   height = { height },
-  //   bacgroundColor = { bacgroundColor },
-  //   text = { text },
-  //   padding = { padding }
     return (
-
-
-        < section style = { styles.section } >
-            <div style={styles.wrapper}>
-                <Items itemss={itemss} />
-            </div>
-        </section >
-
+      <section style = { styles.section } >
+        <div style={styles.wrapper}>
+          <Items renderItems={renderItems} />
+        </div>
+      </section >
     )
 }
 

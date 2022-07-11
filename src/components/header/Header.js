@@ -1,6 +1,6 @@
 import "./header.css"
 
-function Header() {
+const Header = () => {
     return (
         <nav>
             <p>Блок навигации</p>

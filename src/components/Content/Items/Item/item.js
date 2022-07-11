@@ -1,18 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 
-const Container = styled.div`
-  width: ${(props) => props.width ? props.width : '100%'};
-  height: ${(props) => props.height ? props.height : '300px'};
+const Item = ({ el, text }) => {
 
-  background-color: ${(props) => props.backgroundColor ? props.backgroundColor : 'black'};
-`
-
-const Item = ({ width, height, backgroundColor, text }) => {
   return (
-    <Container width={width} backgroundColor={backgroundColor} height={height}>
-      {text}
-    </Container>
+    <div>{el}
+      <p>{text}</p>
+    </div>
   )
 }
 

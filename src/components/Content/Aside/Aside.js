@@ -1,21 +1,20 @@
-import styled from "styled-components";
-
-const SidebarBlock = styled.aside`
-  width           : 200px;
-  background-color: rgb(255, 242, 53);
-  margin-right    : 30px;
-`
-
-const SidebarText = styled.p`
-  padding: 20px 0px 0 20px;
-`
+const styles = {
+  aside: {
+    width: "200px",
+    backgroundColor: "rgb(255, 242, 53)",
+    marginRight: "30px"
+  },
+  p: {
+    padding: "20px 0px 0 20px"
+  }
+}
 
 function Aside() {
-    return (
-        <SidebarBlock>
-            <SidebarText>Сайдбар</SidebarText>
-        </SidebarBlock>
-    )
+  return (
+    <aside style={styles.aside}>
+      <p style={styles.p}>сайдбар</p>
+    </aside>
+  )
 }
 
 export default Aside;

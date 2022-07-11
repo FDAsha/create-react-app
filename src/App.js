@@ -11,14 +11,22 @@ padding: 10px 15px;
 margin : 0px auto;
 `
 
+const Box = styled.div`
+  * {
+    box-sizing: border-box;
+  }
+`
+
 function App() {
-    return (
-        <AppWrapper>
-            <Header />
-            <Content />
-            <Footer />
-        </AppWrapper>
-    )
+  return (
+    <AppWrapper>
+      <Box>
+        <Header />
+        <Content />
+        <Footer />
+      </Box>
+    </AppWrapper>
+  )
 }
 
 export default App;

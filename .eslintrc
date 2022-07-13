@@ -1,0 +1,11 @@
+{
+  "plugins": ["jsx-a11y"],
+  "extends": ["react-app", "react-app/jest", "plugin:jsx-a11y/strict"],
+  "rules": {
+    "no-console": 2,
+    "quotes": [1, "single"], //одинарные кавычки
+    "no-multiple-empty-lines": [2, { "max": 1, "maxEOF": 0, "maxBOF": 0 }], //1 пустая строка в файле, 0 в конце и начале файла
+    "max-len": [2, 70],
+    "indent": [4, "tab"]
+  }
+}

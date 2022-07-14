@@ -7,12 +7,12 @@ export default function Footer() {
       sx={{
         bgcolor: 'purple',
         color: '#000',
-        height: 100,
+        height: 100
       }}
     >
       <p
         style={{
-          padding: 50,
+          padding: 50
         }}
       >
         футер

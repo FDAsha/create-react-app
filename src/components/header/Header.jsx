@@ -7,12 +7,12 @@ export default function Header() {
       sx={{
         bgcolor: 'red',
         color: '#000',
-        height: 100,
+        height: 100
       }}
     >
       <p
         style={{
-          padding: 20,
+          padding: 20
         }}
       >
         блок навигации

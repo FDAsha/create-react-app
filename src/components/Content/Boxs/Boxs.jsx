@@ -9,12 +9,12 @@ export default function Boxs() {
         <Box
           sx={{
             height: 200,
-            backgroundColor: 'green',
+            backgroundColor: 'green'
           }}
         >
           <p
             style={{
-              padding: 80,
+              padding: 80
             }}
           >
             контент 1
@@ -25,12 +25,12 @@ export default function Boxs() {
         <Box
           sx={{
             height: 200,
-            backgroundColor: 'blue',
+            backgroundColor: 'blue'
           }}
         >
           <p
             style={{
-              padding: 40,
+              padding: 40
             }}
           >
             контент 2
@@ -41,12 +41,12 @@ export default function Boxs() {
         <Box
           sx={{
             height: 250,
-            backgroundColor: 'pink',
+            backgroundColor: 'pink'
           }}
         >
           <p
             style={{
-              padding: 120,
+              padding: 120
             }}
           >
             контент 3

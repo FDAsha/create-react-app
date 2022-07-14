@@ -9,12 +9,12 @@ export default function Aside() {
         color: '#000',
         width: 300,
         height: 480,
-        mr: 3,
+        mr: 3
       }}
     >
       <p
         style={{
-          padding: 40,
+          padding: 40
         }}
       >
         сайдбар

@@ -7,7 +7,7 @@
   "extends": ["react-app", "react-app/jest", "plugin:jsx-a11y/strict"],
   "rules": {
     "no-console": 2,
-    "quotes": [1, "single"],
+    // "quotes": [1, "single"],
     "no-multiple-empty-lines": [
       2,
       {
@@ -16,7 +16,7 @@
         "maxBOF": 0
       }
     ],
-    "max-len": [2, 70],
+    "max-len": [2, 150],
     "indent": ["error", 2],
     "array-bracket-newline": [1, "always"],
     "array-element-newline": [1, "never"],
@@ -24,6 +24,6 @@
     "jsx-quotes":[1, "prefer-single"],
     "line-comment-position": [1, { "position": "beside" }],
     "no-whitespace-before-property": 1,
-    "object-curly-newline": [1, "always"]
+    "no-undef": 1
   }
 }

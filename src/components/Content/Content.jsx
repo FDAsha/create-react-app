@@ -17,7 +17,9 @@ const Content = () => {
       backgroundColor: "green",
       text: "Контент 1",
       padding: "20px",
-      xs: "7",
+      xs: "12",
+      md: "6",
+      lg: "7",
       marginRight: "20px"
     },{
       id: "two",
@@ -25,14 +27,18 @@ const Content = () => {
       backgroundColor: "blue",
       text: "Контент 2",
       padding: "20px",
-      xs: "5"
+      xs: "12",
+      md: "6",
+      lg: "5"
     },{
       id: "three",
       height: "200px",
       backgroundColor: "pink",
       text: "Контент 2",
       padding: "40px",
-      xs: "12"
+      xs: "12",
+      md: "12",
+      lg: "12"
     }
   ];
   return (

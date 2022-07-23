@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useLayoutEffect } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -6,28 +6,55 @@ const Container = styled.div`
   background-color: ${({ backgroundColor }) => backgroundColor};
   margin-right: ${({ marginRight }) => marginRight};
 `;
+
 const Text = styled.p`
   padding: ${({ padding }) => padding};
   text: ${({ text }) => text};
 `;
 
-const Boxelement = ({
+const BoxElement = ({
   height = "200px",
   backgroundColor = "pink",
-  text = "контент ",
   padding = "90px",
-  marginRight = "0px"
+  marginRight = "0px",
+  text = 'Default'
 }) => {
+  const [
+    currentColor, setCurrentColor
+  ] = useState(backgroundColor)
+  const [
+    currentText, setCurrentText
+  ] = useState(text)
+
+  useLayoutEffect(() => {
+    if (currentColor === 'yellow') {
+      setCurrentText("I'm yellow")
+    } else {
+      setCurrentText(text)
+    }
+  }, [
+    currentColor
+  ])
+
+  const changeColor = () => {
+    if (currentColor === backgroundColor) {
+      setCurrentColor('yellow')
+    } else {
+      setCurrentColor(backgroundColor)
+    }
+  }
+
   return (
     <Container
       height={height}
-      backgroundColor={backgroundColor}
+      backgroundColor={currentColor}
       padding={padding}
       marginRight={marginRight}
+      onClick={changeColor}
     >
-      <Text padding={padding}>{text}</Text>
+      <Text padding={padding}>{currentText}</Text>
     </Container>
   );
 };
 
-export default Boxelement;
+export default BoxElement;
